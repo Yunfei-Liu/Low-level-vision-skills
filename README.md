@@ -141,18 +141,42 @@ Based on current files in this repo:
 
 ### Denoise
 
-Input: ![denoise input](./demos/input/denoise_input.png)  
-Output: ![denoise output](./outputs/gallery/denoise_output.png)
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+  </tr>
+</table>
 
 ### Deblur
 
-Input: ![deblur input](./demos/input/deblur_input.png)  
-Output: ![deblur output](./outputs/gallery/deblur_output.png)
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+  </tr>
+</table>
 
 ### Low-light Enhance
 
-Input: ![low-light input](./demos/input/low_light_input.jpeg)  
-Output: ![low-light output](./outputs/gallery/low_light_output.png)
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+  </tr>
+</table>
 
 ## Skill trigger examples
 

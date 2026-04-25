@@ -141,18 +141,42 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
 
 ### Denoise
 
-输入：![denoise input](./demos/input/denoise_input.png)  
-输出：![denoise output](./outputs/gallery/denoise_output.png)
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+  </tr>
+</table>
 
 ### Deblur
 
-输入：![deblur input](./demos/input/deblur_input.png)  
-输出：![deblur output](./outputs/gallery/deblur_output.png)
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+  </tr>
+</table>
 
 ### Low-light Enhance
 
-输入：![low-light input](./demos/input/low_light_input.jpeg)  
-输出：![low-light output](./outputs/gallery/low_light_output.png)
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+  </tr>
+</table>
 
 ## Skill 触发示例
 
