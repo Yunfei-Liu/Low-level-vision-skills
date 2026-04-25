@@ -1,0 +1,26 @@
+[
+  {
+    "input": "demos/input/portrait.jpg",
+    "task": "denoise"
+  },
+  {
+    "input": "demos/input/portrait.jpg",
+    "task": "deblur"
+  },
+  {
+    "input": "demos/input/street_night.jpg",
+    "task": "low_light_enhance"
+  },
+  {
+    "input": "demos/input/hazy_scene.jpg",
+    "task": "dehaze"
+  },
+  {
+    "input": "demos/input/city.jpg",
+    "task": "depth_map"
+  },
+  {
+    "input": "demos/input/car.jpg",
+    "task": "edge_map"
+  }
+]
