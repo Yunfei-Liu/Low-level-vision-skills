@@ -10,6 +10,7 @@
 - 基于前沿图像模型（默认 `gpt-image-2`）的自动化脚本
 - 适合 GitHub 展示的 Demo/Gallery 目录结构
 - 支持批量运行的一键脚本
+- 提供跨 IDE 集成文档（Cursor、Claude 工作流、通用终端 IDE）
 
 ## 这个项目解决了什么
 
@@ -123,66 +124,18 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
   --size 1024x1024
 ```
 
-## Gallery（当前结果）
+## IDE 兼容性
 
-以下表格基于仓库里当前已有文件：
+| IDE / Agent | 状态 | 使用方式 |
+|---|---|---|
+| Cursor | 已就绪 | 使用 `.cursor/skills/low-level-vision-p2p/` 原生 skill |
+| Claude 风格 IDE 工作流 | 已就绪 | 使用 `adapters/claude/` 适配文档并调用共享 CLI |
+| 其他 IDE | 已就绪 | 在终端/任务系统直接调用 CLI |
 
-<table>
-  <colgroup>
-    <col style="width: 130px;">
-    <col style="width: 340px;">
-    <col style="width: 340px;">
-    <col style="width: 120px;">
-  </colgroup>
-  <tr>
-    <th>任务</th>
-    <th>输入图</th>
-    <th>输出图</th>
-    <th>状态</th>
-  </tr>
-  <tr>
-    <td><code>denoise</code></td>
-    <td><img src="./demos/input/denoise_input.png" alt="denoise input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>已生成</td>
-  </tr>
-  <tr>
-    <td><code>deblur</code></td>
-    <td><img src="./demos/input/deblur_input.png" alt="deblur input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>已生成</td>
-  </tr>
-  <tr>
-    <td><code>low_light_enhance</code></td>
-    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>已生成</td>
-  </tr>
-  <tr>
-    <td><code>dehaze</code></td>
-    <td><code>demos/input/dehaze_input.png</code></td>
-    <td><em>pending</em></td>
-    <td>已有输入</td>
-  </tr>
-  <tr>
-    <td><code>edge_map</code></td>
-    <td><code>demos/input/edge_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>已有输入</td>
-  </tr>
-  <tr>
-    <td><code>depth_map</code></td>
-    <td><code>demos/input/depth_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>已有输入</td>
-  </tr>
-  <tr>
-    <td><code>semantic_segmentation_map</code></td>
-    <td><code>demos/input/seg_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>已有输入</td>
-  </tr>
-</table>
+集成文档入口：
+- `docs/IDE_INTEGRATION.md`
+- `adapters/claude/SKILL.md`
+- `adapters/claude/PROMPT_TEMPLATE.md`
 
 ## Gallery 预览
 

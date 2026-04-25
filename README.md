@@ -10,6 +10,7 @@ This repository provides:
 - A runnable automation script powered by frontier image models (`gpt-image-2` by default)
 - A demo gallery layout you can quickly fill with your own results
 - A batch runner for fast multi-task showcase generation
+- Cross-IDE integration docs (Cursor, Claude-style workflows, and generic IDE terminals)
 
 ## Why this is useful
 
@@ -123,66 +124,18 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
   --size 1024x1024
 ```
 
-## Demo gallery (current)
+## IDE compatibility
 
-Based on current files in this repo:
+| IDE / Agent | Status | How to use |
+|---|---|---|
+| Cursor | Ready | Native skill in `.cursor/skills/low-level-vision-p2p/` |
+| Claude-style IDE workflows | Ready | Use adapter docs in `adapters/claude/` and call shared CLI |
+| Other IDEs | Ready | Run CLI directly from terminal/tasks |
 
-<table>
-  <colgroup>
-    <col style="width: 130px;">
-    <col style="width: 340px;">
-    <col style="width: 340px;">
-    <col style="width: 120px;">
-  </colgroup>
-  <tr>
-    <th>Task</th>
-    <th>Input</th>
-    <th>Output</th>
-    <th>Notes</th>
-  </tr>
-  <tr>
-    <td><code>denoise</code></td>
-    <td><img src="./demos/input/denoise_input.png" alt="denoise input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>generated</td>
-  </tr>
-  <tr>
-    <td><code>deblur</code></td>
-    <td><img src="./demos/input/deblur_input.png" alt="deblur input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>generated</td>
-  </tr>
-  <tr>
-    <td><code>low_light_enhance</code></td>
-    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" style="width:320px;height:220px;object-fit:cover;"></td>
-    <td>generated</td>
-  </tr>
-  <tr>
-    <td><code>dehaze</code></td>
-    <td><code>demos/input/dehaze_input.png</code></td>
-    <td><em>pending</em></td>
-    <td>input ready</td>
-  </tr>
-  <tr>
-    <td><code>edge_map</code></td>
-    <td><code>demos/input/edge_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>input ready</td>
-  </tr>
-  <tr>
-    <td><code>depth_map</code></td>
-    <td><code>demos/input/depth_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>input ready</td>
-  </tr>
-  <tr>
-    <td><code>semantic_segmentation_map</code></td>
-    <td><code>demos/input/seg_input.jpg</code></td>
-    <td><em>pending</em></td>
-    <td>input ready</td>
-  </tr>
-</table>
+Integration docs:
+- `docs/IDE_INTEGRATION.md`
+- `adapters/claude/SKILL.md`
+- `adapters/claude/PROMPT_TEMPLATE.md`
 
 ## Gallery preview
 
