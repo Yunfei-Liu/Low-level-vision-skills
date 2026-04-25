@@ -142,20 +142,20 @@ Based on current files in this repo:
   </tr>
   <tr>
     <td><code>denoise</code></td>
-    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
-    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" style="width:320px;height:220px;object-fit:cover;"></td>
     <td>generated</td>
   </tr>
   <tr>
     <td><code>deblur</code></td>
-    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
-    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" style="width:320px;height:220px;object-fit:cover;"></td>
     <td>generated</td>
   </tr>
   <tr>
     <td><code>low_light_enhance</code></td>
-    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
-    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" style="width:320px;height:220px;object-fit:cover;"></td>
     <td>generated</td>
   </tr>
   <tr>
@@ -194,8 +194,8 @@ Based on current files in this repo:
     <th>Output</th>
   </tr>
   <tr>
-    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
-    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" style="width:320px;height:220px;object-fit:cover;"></td>
   </tr>
 </table>
 
@@ -207,8 +207,8 @@ Based on current files in this repo:
     <th>Output</th>
   </tr>
   <tr>
-    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
-    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" style="width:320px;height:220px;object-fit:cover;"></td>
   </tr>
 </table>
 
@@ -220,8 +220,8 @@ Based on current files in this repo:
     <th>Output</th>
   </tr>
   <tr>
-    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
-    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" style="width:320px;height:220px;object-fit:cover;"></td>
   </tr>
 </table>
 
