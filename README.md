@@ -28,6 +28,62 @@ This repository provides:
 Full list lives in:
 - `.cursor/skills/low-level-vision-p2p/SKILL.md`
 
+<details>
+<summary><strong>Supported low-level vision tasks (click to expand)</strong></summary>
+
+### Restoration
+
+- `denoise`: remove sensor/chroma noise while preserving textures
+- `deblur`: recover sharp details from motion/defocus blur
+- `super_resolution`: improve apparent resolution with structure consistency
+- `jpeg_artifact_removal`: remove blocking/ringing from compression
+- `dehaze`: reduce haze/fog and restore natural contrast
+- `derain`: remove rain streaks and rain veil
+- `deweather`: clean mixed weather artifacts (rain/snow/fog)
+- `low_light_enhance`: improve dark visibility with controlled noise
+- `color_correction`: correct global/local color cast
+- `white_balance`: neutralize illumination color bias
+- `exposure_correction`: rebalance highlight and shadow details
+- `lens_distortion_correction`: correct barrel/pincushion distortion
+- `vignette_removal`: remove corner darkening
+- `reflection_removal`: suppress glass/specular reflections
+- `shadow_removal`: reduce cast shadows with material consistency
+- `moire_removal`: suppress moire/interference patterns
+
+### Color and Tone Mapping
+
+- `grayscale_to_color`: plausible colorization from grayscale input
+- `day_to_night`: convert daytime appearance to nighttime style
+- `night_to_day`: convert nighttime scene to daytime appearance
+- `style_preserving_relight`: change illumination while preserving geometry/identity
+- `hdr_like_tone_mapping`: improve local dynamic range perception
+
+### Geometry and View-Preserving
+
+- `rectification`: perspective correction for documents/buildings
+- `inpainting_structural`: fill missing regions using local structure cues
+- `outpainting_local_context`: extend image context with continuity
+
+### Dense Prediction-Style Outputs
+
+- `edge_map`: white-on-black edge visualization
+- `line_art_clean`: clean contour-focused line drawing
+- `depth_map`: relative depth map (near bright, far dark)
+- `surface_normals`: RGB surface normal map
+- `saliency_map`: attention/saliency intensity map
+- `binary_mask_foreground`: foreground white / background black mask
+- `semantic_segmentation_map`: color-coded semantic region map
+
+### Domain Translation (Pixel-Aligned Preference)
+
+- `photo_to_sketch`: convert photo to structure-preserving sketch
+- `sketch_to_photo`: render sketch into realistic photo
+- `map_to_satellite_like`: map-style to satellite-like appearance
+- `satellite_like_to_map`: satellite-like to map-style rendering
+- `thermal_like_render`: thermal-camera-like visualization
+
+</details>
+
 ## Quick start
 
 ### 1) Install dependencies
@@ -67,19 +123,36 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
   --size 1024x1024
 ```
 
-## Demo gallery template
+## Demo gallery (current)
 
-Put your curated before/after pairs in `demos/gallery/` and update this table:
+Based on current files in this repo:
 
 | Task | Input | Output | Notes |
 |---|---|---|---|
-| `denoise` | `demos/gallery/denoise_input.jpg` | `demos/gallery/denoise_output.png` | texture-preserving |
-| `deblur` | `demos/gallery/deblur_input.jpg` | `demos/gallery/deblur_output.png` | anti-halo |
-| `low_light_enhance` | `demos/gallery/low_light_input.jpg` | `demos/gallery/low_light_output.png` | shadow visibility |
-| `dehaze` | `demos/gallery/dehaze_input.jpg` | `demos/gallery/dehaze_output.png` | natural color |
-| `edge_map` | `demos/gallery/edge_input.jpg` | `demos/gallery/edge_output.png` | white-on-black |
-| `depth_map` | `demos/gallery/depth_input.jpg` | `demos/gallery/depth_output.png` | near bright, far dark |
-| `semantic_segmentation_map` | `demos/gallery/seg_input.jpg` | `demos/gallery/seg_output.png` | coherent regions |
+| `denoise` | ![denoise input](./demos/input/denoise_input.png) | ![denoise output](./outputs/gallery/denoise_output.png) | generated |
+| `deblur` | ![deblur input](./demos/input/deblur_input.png) | ![deblur output](./outputs/gallery/deblur_output.png) | generated |
+| `low_light_enhance` | ![low-light input](./demos/input/low_light_input.jpeg) | ![low-light output](./outputs/gallery/low_light_output.png) | generated |
+| `dehaze` | `demos/input/dehaze_input.png` | _pending_ | input ready |
+| `edge_map` | `demos/input/edge_input.jpg` | _pending_ | input ready |
+| `depth_map` | `demos/input/depth_input.jpg` | _pending_ | input ready |
+| `semantic_segmentation_map` | `demos/input/seg_input.jpg` | _pending_ | input ready |
+
+## Gallery preview
+
+### Denoise
+
+Input: ![denoise input](./demos/input/denoise_input.png)  
+Output: ![denoise output](./outputs/gallery/denoise_output.png)
+
+### Deblur
+
+Input: ![deblur input](./demos/input/deblur_input.png)  
+Output: ![deblur output](./outputs/gallery/deblur_output.png)
+
+### Low-light Enhance
+
+Input: ![low-light input](./demos/input/low_light_input.jpeg)  
+Output: ![low-light output](./outputs/gallery/low_light_output.png)
 
 ## Skill trigger examples
 

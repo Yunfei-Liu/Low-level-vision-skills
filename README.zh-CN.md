@@ -28,6 +28,62 @@
 完整任务清单见：
 - `.cursor/skills/low-level-vision-p2p/SKILL.md`
 
+<details>
+<summary><strong>支持的 low-level vision 任务（点击展开）</strong></summary>
+
+### 图像恢复与增强
+
+- `denoise`：去除传感器噪声/色噪，尽量保留纹理
+- `deblur`：从运动模糊/离焦模糊中恢复清晰细节
+- `super_resolution`：提升感知分辨率并保持结构一致
+- `jpeg_artifact_removal`：去除压缩块效应与振铃伪影
+- `dehaze`：去雾并恢复自然对比度
+- `derain`：去除雨丝和雨幕
+- `deweather`：去除雨/雪/雾等复合天气干扰
+- `low_light_enhance`：低照度增强并控制噪声
+- `color_correction`：纠正全局或局部偏色
+- `white_balance`：白平衡校正，消除光照色偏
+- `exposure_correction`：平衡高光和阴影细节
+- `lens_distortion_correction`：校正桶形/枕形畸变
+- `vignette_removal`：去除暗角
+- `reflection_removal`：抑制玻璃/镜面反射
+- `shadow_removal`：减弱投影阴影并保持材质真实
+- `moire_removal`：去除摩尔纹/干涉纹
+
+### 色彩与光照映射
+
+- `grayscale_to_color`：灰度图自然上色
+- `day_to_night`：白天场景转夜景风格
+- `night_to_day`：夜景转白天外观
+- `style_preserving_relight`：保持结构身份不变，仅改变光照
+- `hdr_like_tone_mapping`：提升局部动态范围观感
+
+### 几何与视角保持变换
+
+- `rectification`：文档/建筑等透视矫正
+- `inpainting_structural`：基于周边结构的缺失区域补全
+- `outpainting_local_context`：在局部上下文一致前提下外扩
+
+### 稠密预测风格输出
+
+- `edge_map`：黑底白边的边缘图
+- `line_art_clean`：轮廓为主的干净线稿
+- `depth_map`：相对深度图（近亮远暗）
+- `surface_normals`：RGB 法线图
+- `saliency_map`：显著性热度图
+- `binary_mask_foreground`：前景白、背景黑的二值 mask
+- `semantic_segmentation_map`：语义分割彩色区域图
+
+### 领域转换（偏像素对齐）
+
+- `photo_to_sketch`：照片转结构保持的素描
+- `sketch_to_photo`：素描转写实图像
+- `map_to_satellite_like`：地图风格转遥感风格
+- `satellite_like_to_map`：遥感风格转地图风格
+- `thermal_like_render`：热成像风格可视化
+
+</details>
+
 ## 快速开始
 
 ### 1）安装依赖
@@ -67,19 +123,36 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
   --size 1024x1024
 ```
 
-## Gallery 展示模板
+## Gallery（当前结果）
 
-将你筛选后的输入/输出样例放到 `demos/gallery/`，并维护如下表格：
+以下表格基于仓库里当前已有文件：
 
-| 任务 | 输入图 | 输出图 | 说明 |
+| 任务 | 输入图 | 输出图 | 状态 |
 |---|---|---|---|
-| `denoise` | `demos/gallery/denoise_input.jpg` | `demos/gallery/denoise_output.png` | 纹理保真 |
-| `deblur` | `demos/gallery/deblur_input.jpg` | `demos/gallery/deblur_output.png` | 抗光晕 |
-| `low_light_enhance` | `demos/gallery/low_light_input.jpg` | `demos/gallery/low_light_output.png` | 暗部可见性 |
-| `dehaze` | `demos/gallery/dehaze_input.jpg` | `demos/gallery/dehaze_output.png` | 自然色彩 |
-| `edge_map` | `demos/gallery/edge_input.jpg` | `demos/gallery/edge_output.png` | 黑底白边 |
-| `depth_map` | `demos/gallery/depth_input.jpg` | `demos/gallery/depth_output.png` | 近亮远暗 |
-| `semantic_segmentation_map` | `demos/gallery/seg_input.jpg` | `demos/gallery/seg_output.png` | 区域一致性 |
+| `denoise` | ![denoise input](./demos/input/denoise_input.png) | ![denoise output](./outputs/gallery/denoise_output.png) | 已生成 |
+| `deblur` | ![deblur input](./demos/input/deblur_input.png) | ![deblur output](./outputs/gallery/deblur_output.png) | 已生成 |
+| `low_light_enhance` | ![low-light input](./demos/input/low_light_input.jpeg) | ![low-light output](./outputs/gallery/low_light_output.png) | 已生成 |
+| `dehaze` | `demos/input/dehaze_input.png` | _pending_ | 已有输入 |
+| `edge_map` | `demos/input/edge_input.jpg` | _pending_ | 已有输入 |
+| `depth_map` | `demos/input/depth_input.jpg` | _pending_ | 已有输入 |
+| `semantic_segmentation_map` | `demos/input/seg_input.jpg` | _pending_ | 已有输入 |
+
+## Gallery 预览
+
+### Denoise
+
+输入：![denoise input](./demos/input/denoise_input.png)  
+输出：![denoise output](./outputs/gallery/denoise_output.png)
+
+### Deblur
+
+输入：![deblur input](./demos/input/deblur_input.png)  
+输出：![deblur output](./outputs/gallery/deblur_output.png)
+
+### Low-light Enhance
+
+输入：![low-light input](./demos/input/low_light_input.jpeg)  
+输出：![low-light output](./outputs/gallery/low_light_output.png)
 
 ## Skill 触发示例
 
