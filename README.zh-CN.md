@@ -127,15 +127,62 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
 
 以下表格基于仓库里当前已有文件：
 
-| 任务 | 输入图 | 输出图 | 状态 |
-|---|---|---|---|
-| `denoise` | ![denoise input](./demos/input/denoise_input.png) | ![denoise output](./outputs/gallery/denoise_output.png) | 已生成 |
-| `deblur` | ![deblur input](./demos/input/deblur_input.png) | ![deblur output](./outputs/gallery/deblur_output.png) | 已生成 |
-| `low_light_enhance` | ![low-light input](./demos/input/low_light_input.jpeg) | ![low-light output](./outputs/gallery/low_light_output.png) | 已生成 |
-| `dehaze` | `demos/input/dehaze_input.png` | _pending_ | 已有输入 |
-| `edge_map` | `demos/input/edge_input.jpg` | _pending_ | 已有输入 |
-| `depth_map` | `demos/input/depth_input.jpg` | _pending_ | 已有输入 |
-| `semantic_segmentation_map` | `demos/input/seg_input.jpg` | _pending_ | 已有输入 |
+<table>
+  <colgroup>
+    <col style="width: 130px;">
+    <col style="width: 340px;">
+    <col style="width: 340px;">
+    <col style="width: 120px;">
+  </colgroup>
+  <tr>
+    <th>任务</th>
+    <th>输入图</th>
+    <th>输出图</th>
+    <th>状态</th>
+  </tr>
+  <tr>
+    <td><code>denoise</code></td>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+    <td>已生成</td>
+  </tr>
+  <tr>
+    <td><code>deblur</code></td>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+    <td>已生成</td>
+  </tr>
+  <tr>
+    <td><code>low_light_enhance</code></td>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+    <td>已生成</td>
+  </tr>
+  <tr>
+    <td><code>dehaze</code></td>
+    <td><code>demos/input/dehaze_input.png</code></td>
+    <td><em>pending</em></td>
+    <td>已有输入</td>
+  </tr>
+  <tr>
+    <td><code>edge_map</code></td>
+    <td><code>demos/input/edge_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>已有输入</td>
+  </tr>
+  <tr>
+    <td><code>depth_map</code></td>
+    <td><code>demos/input/depth_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>已有输入</td>
+  </tr>
+  <tr>
+    <td><code>semantic_segmentation_map</code></td>
+    <td><code>demos/input/seg_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>已有输入</td>
+  </tr>
+</table>
 
 ## Gallery 预览
 

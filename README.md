@@ -127,15 +127,62 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
 
 Based on current files in this repo:
 
-| Task | Input | Output | Notes |
-|---|---|---|---|
-| `denoise` | ![denoise input](./demos/input/denoise_input.png) | ![denoise output](./outputs/gallery/denoise_output.png) | generated |
-| `deblur` | ![deblur input](./demos/input/deblur_input.png) | ![deblur output](./outputs/gallery/deblur_output.png) | generated |
-| `low_light_enhance` | ![low-light input](./demos/input/low_light_input.jpeg) | ![low-light output](./outputs/gallery/low_light_output.png) | generated |
-| `dehaze` | `demos/input/dehaze_input.png` | _pending_ | input ready |
-| `edge_map` | `demos/input/edge_input.jpg` | _pending_ | input ready |
-| `depth_map` | `demos/input/depth_input.jpg` | _pending_ | input ready |
-| `semantic_segmentation_map` | `demos/input/seg_input.jpg` | _pending_ | input ready |
+<table>
+  <colgroup>
+    <col style="width: 130px;">
+    <col style="width: 340px;">
+    <col style="width: 340px;">
+    <col style="width: 120px;">
+  </colgroup>
+  <tr>
+    <th>Task</th>
+    <th>Input</th>
+    <th>Output</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td><code>denoise</code></td>
+    <td><img src="./demos/input/denoise_input.png" alt="denoise input" width="320"></td>
+    <td><img src="./outputs/gallery/denoise_output.png" alt="denoise output" width="320"></td>
+    <td>generated</td>
+  </tr>
+  <tr>
+    <td><code>deblur</code></td>
+    <td><img src="./demos/input/deblur_input.png" alt="deblur input" width="320"></td>
+    <td><img src="./outputs/gallery/deblur_output.png" alt="deblur output" width="320"></td>
+    <td>generated</td>
+  </tr>
+  <tr>
+    <td><code>low_light_enhance</code></td>
+    <td><img src="./demos/input/low_light_input.jpeg" alt="low-light input" width="320"></td>
+    <td><img src="./outputs/gallery/low_light_output.png" alt="low-light output" width="320"></td>
+    <td>generated</td>
+  </tr>
+  <tr>
+    <td><code>dehaze</code></td>
+    <td><code>demos/input/dehaze_input.png</code></td>
+    <td><em>pending</em></td>
+    <td>input ready</td>
+  </tr>
+  <tr>
+    <td><code>edge_map</code></td>
+    <td><code>demos/input/edge_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>input ready</td>
+  </tr>
+  <tr>
+    <td><code>depth_map</code></td>
+    <td><code>demos/input/depth_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>input ready</td>
+  </tr>
+  <tr>
+    <td><code>semantic_segmentation_map</code></td>
+    <td><code>demos/input/seg_input.jpg</code></td>
+    <td><em>pending</em></td>
+    <td>input ready</td>
+  </tr>
+</table>
 
 ## Gallery preview
 
