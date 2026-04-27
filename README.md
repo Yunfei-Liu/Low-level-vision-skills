@@ -245,17 +245,3 @@ demos/
 outputs/
 ```
 
-## Suggested release checklist
-
-- Add 8-12 representative gallery cases (indoor, outdoor, portrait, night, texture-rich)
-- Include one failure-case section (what not to expect)
-- Add benchmark notes (subjective quality + latency)
-- Pin dependency versions in `requirements.txt` if needed
-- Add LICENSE and CITATION if your org requires it
-
-## Roadmap ideas
-
-- Add deterministic post-checkers (SSIM/LPIPS/edge consistency) for regression tracking
-- Add task-specific presets (`fast`, `balanced`, `quality`)
-- Add automatic markdown gallery generation from `outputs/`
-- Add optional multimodel backend adapter (OpenAI, others)
