@@ -23,6 +23,7 @@
 
 - 图像恢复增强：去噪、去模糊、超分、去雾、去雨、低照增强、压缩伪影去除等
 - 稠密预测图输出：边缘图、深度图、法线图、显著图、mask、分割图
+- intrinsic decomposition：albedo layer（反照率层）与 shading layer（光照层）
 - 几何保持变换：透视矫正、结构化补全、局部外扩
 - 领域转换（尽量像素对齐）：照片/素描互转、地图/遥感风格互转
 
@@ -70,6 +71,8 @@
 - `edge_map`：黑底白边的边缘图
 - `line_art_clean`：轮廓为主的干净线稿
 - `depth_map`：相对深度图（近亮远暗）
+- `albedo_layer`：intrinsic decomposition 中的反照率层输出
+- `shading_layer`：intrinsic decomposition 中的光照/明暗层输出
 - `surface_normals`：RGB 法线图
 - `saliency_map`：显著性热度图
 - `binary_mask_foreground`：前景白、背景黑的二值 mask
@@ -130,12 +133,15 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
 |---|---|---|
 | Cursor | 已就绪 | 使用 `.cursor/skills/low-level-vision-p2p/` 原生 skill |
 | Claude 风格 IDE 工作流 | 已就绪 | 使用 `adapters/claude/` 适配文档并调用共享 CLI |
+| VS Code | 已就绪 | 使用 `adapters/vscode/tasks.json.example` |
 | 其他 IDE | 已就绪 | 在终端/任务系统直接调用 CLI |
 
 集成文档入口：
 - `docs/IDE_INTEGRATION.md`
 - `adapters/claude/SKILL.md`
 - `adapters/claude/PROMPT_TEMPLATE.md`
+- `adapters/vscode/README.md`
+- `adapters/vscode/tasks.json.example`
 
 ## Gallery 预览
 

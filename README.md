@@ -23,6 +23,7 @@ This repository provides:
 
 - Restoration: denoise, deblur, super-resolution, dehaze, derain, low-light enhancement, artifact removal, etc.
 - Dense map outputs: edge maps, depth maps, normal maps, saliency, masks, segmentation-like maps
+- Intrinsic decomposition: albedo layer and shading layer
 - Geometry-preserving transforms: rectification, structural inpainting, local outpainting
 - Domain translation (pixel-aligned preference): photo/sketch, map/satellite-like
 
@@ -70,6 +71,8 @@ Full list lives in:
 - `edge_map`: white-on-black edge visualization
 - `line_art_clean`: clean contour-focused line drawing
 - `depth_map`: relative depth map (near bright, far dark)
+- `albedo_layer`: intrinsic reflectance/albedo decomposition output
+- `shading_layer`: intrinsic shading/illumination decomposition output
 - `surface_normals`: RGB surface normal map
 - `saliency_map`: attention/saliency intensity map
 - `binary_mask_foreground`: foreground white / background black mask
@@ -130,12 +133,15 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
 |---|---|---|
 | Cursor | Ready | Native skill in `.cursor/skills/low-level-vision-p2p/` |
 | Claude-style IDE workflows | Ready | Use adapter docs in `adapters/claude/` and call shared CLI |
+| VS Code | Ready | Use `adapters/vscode/tasks.json.example` |
 | Other IDEs | Ready | Run CLI directly from terminal/tasks |
 
 Integration docs:
 - `docs/IDE_INTEGRATION.md`
 - `adapters/claude/SKILL.md`
 - `adapters/claude/PROMPT_TEMPLATE.md`
+- `adapters/vscode/README.md`
+- `adapters/vscode/tasks.json.example`
 
 ## Gallery preview
 

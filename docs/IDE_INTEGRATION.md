@@ -14,7 +14,8 @@ Core scripts:
 |---|---|---|
 | Cursor | Ready | Native Cursor Skill (`.cursor/skills/...`) |
 | Claude-based IDE workflows | Ready (adapter) | Prompt/command adapter that calls the same CLI |
-| Other IDEs (VS Code, JetBrains, etc.) | Ready | Run CLI directly in terminal/tasks |
+| VS Code | Ready (adapter) | Use task runner template in `adapters/vscode/` |
+| Other IDEs (JetBrains, etc.) | Ready | Run CLI directly in terminal/tasks |
 
 ## Common One-Command Pattern
 
@@ -37,6 +38,16 @@ The adapter tells Claude-like agents to:
 2. Build/validate prompt constraints.
 3. Execute the shared CLI command.
 4. Return output image path and metadata path.
+
+## VS Code Adapter
+
+See:
+- `adapters/vscode/README.md`
+- `adapters/vscode/tasks.json.example`
+
+This adapter provides ready-to-use VS Code tasks for:
+- single image task execution
+- batch manifest execution
 
 ## For Other IDEs
 
