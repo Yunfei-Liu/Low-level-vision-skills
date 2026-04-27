@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LLV-P2P: Run single task",
+      "type": "shell",
+      "command": "python .cursor/skills/low-level-vision-p2p/scripts/run_task.py --input ${input:llvInputImage} --task ${input:llvTaskId} --provider ${input:llvProvider} --model ${input:llvModel}",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "LLV-P2P: Run batch manifest",
+      "type": "shell",
+      "command": "python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py --manifest ${input:llvManifest} --provider ${input:llvProvider} --model ${input:llvModel}",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "llvInputImage",
+      "type": "promptString",
+      "description": "Input image path (e.g. demos/input/denoise_input.png)"
+    },
+    {
+      "id": "llvTaskId",
+      "type": "promptString",
+      "description": "Canonical task ID (e.g. denoise, deblur, dehaze, depth_map)"
+    },
+    {
+      "id": "llvManifest",
+      "type": "promptString",
+      "description": "Manifest path (e.g. demos/tasks.example.json)",
+      "default": "demos/tasks.example.json"
+    },
+    {
+      "id": "llvProvider",
+      "type": "pickString",
+      "description": "Model provider",
+      "options": [
+        "openai",
+        "openai_compatible"
+      ],
+      "default": "openai"
+    },
+    {
+      "id": "llvModel",
+      "type": "promptString",
+      "description": "Model name",
+      "default": "gpt-image-2"
+    }
+  ]
+}
