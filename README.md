@@ -184,6 +184,45 @@ Integration docs:
   </tr>
 </table>
 
+### Edge Map
+
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/edge_input.jpg" alt="edge input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/edge_output.png" alt="edge output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
+### Depth Map
+
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/depth_input.jpg" alt="depth input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/depth_output.png" alt="depth output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
+### Semantic Segmentation Map
+
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/seg_input.jpg" alt="segmentation input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/seg_output.png" alt="segmentation output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
 ## Skill trigger examples
 
 The skill should activate when user asks things like:

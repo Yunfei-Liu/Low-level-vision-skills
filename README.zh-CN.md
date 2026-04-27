@@ -184,6 +184,45 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_batch.py \
   </tr>
 </table>
 
+### Edge Map
+
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/edge_input.jpg" alt="edge input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/edge_output.png" alt="edge output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
+### Depth Map
+
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/depth_input.jpg" alt="depth input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/depth_output.png" alt="depth output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
+### Semantic Segmentation Map
+
+<table>
+  <tr>
+    <th>输入</th>
+    <th>输出</th>
+  </tr>
+  <tr>
+    <td><img src="./demos/input/seg_input.jpg" alt="segmentation input" style="width:320px;height:220px;object-fit:cover;"></td>
+    <td><img src="./outputs/gallery/seg_output.png" alt="segmentation output" style="width:320px;height:220px;object-fit:cover;"></td>
+  </tr>
+</table>
+
 ## Skill 触发示例
 
 当用户提出如下需求时，skill 应被触发：
