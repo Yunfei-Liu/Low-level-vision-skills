@@ -20,6 +20,14 @@ python .cursor/skills/low-level-vision-p2p/scripts/run_task.py \
 python .cursor/skills/low-level-vision-p2p/scripts/run_task.py \
   --input demos/input/portrait.jpg \
   --task deblur
+
+python .cursor/skills/low-level-vision-p2p/scripts/run_task.py \
+  --input demos/input/portrait.jpg \
+  --task albedo_layer
+
+python .cursor/skills/low-level-vision-p2p/scripts/run_task.py \
+  --input demos/input/portrait.jpg \
+  --task shading_layer
 ```
 
 ## Prompt Snapshot Example (`dehaze`)
@@ -53,4 +61,6 @@ If uncertain, prefer conservative edits over aggressive hallucination.
 - `outputs/denoise/portrait__denoise.png`
 - `outputs/deblur/portrait__deblur.png`
 - `outputs/depth_map/street__depth_map.png`
+- `outputs/albedo_layer/portrait__albedo_layer.png`
+- `outputs/shading_layer/portrait__shading_layer.png`
 - `outputs/edge_map/car__edge_map.png`

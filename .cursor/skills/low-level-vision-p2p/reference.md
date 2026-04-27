@@ -30,6 +30,8 @@ Use exact task IDs from this table. Alias should map to canonical ID before exec
 | edge_map | 边缘图 |
 | line_art_clean | 线稿提取 |
 | depth_map | 深度图 |
+| albedo_layer | intrinsic albedo, 反射率层, 固有反照率 |
+| shading_layer | intrinsic shading, 光照层, 明暗层 |
 | surface_normals | 法线图 |
 | saliency_map | 显著图 |
 | binary_mask_foreground | 前景二值 mask |

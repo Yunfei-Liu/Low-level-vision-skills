@@ -66,6 +66,8 @@ TASKS: Dict[str, TaskSpec] = {
     "edge_map": TaskSpec("Generate a clean high-contrast edge map.", "Monochrome edge image, white edges on black background.", "Clear contours, low noise."),
     "line_art_clean": TaskSpec("Generate simplified clean line drawing preserving main contours.", "Monochrome line-art image.", "Crisp lines, minimal clutter."),
     "depth_map": TaskSpec("Generate relative depth map from the input scene.", "Grayscale depth map with near=bright, far=dark.", "Smooth depth with edge awareness."),
+    "albedo_layer": TaskSpec("Decompose the image and output the intrinsic albedo (reflectance) layer with illumination removed as much as possible.", "Intrinsic albedo image emphasizing material color, with minimized shading and shadows.", "Uniform reflectance across same materials, minimal lighting imprint, clean boundaries."),
+    "shading_layer": TaskSpec("Decompose the image and output the intrinsic shading/illumination layer while suppressing material color variations.", "Intrinsic shading image that captures light and shadow structure.", "Smooth illumination transitions, preserved shadow geometry, reduced texture/albedo leakage."),
     "surface_normals": TaskSpec("Generate surface normal map using standard RGB normal encoding.", "RGB normal map image.", "Consistent normal orientation and smooth surfaces."),
     "saliency_map": TaskSpec("Generate saliency map emphasizing visually important regions.", "Heatmap-like saliency image.", "Stable, interpretable salient regions."),
     "binary_mask_foreground": TaskSpec("Generate binary foreground mask.", "Binary image: foreground white, background black.", "Clean boundary and minimal holes."),
@@ -81,6 +83,8 @@ ALIASES = {
     "relight": "style_preserving_relight",
     "mask": "binary_mask_foreground",
     "seg_map": "semantic_segmentation_map",
+    "albedo": "albedo_layer",
+    "shading": "shading_layer",
 }
 
 

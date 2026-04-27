@@ -58,6 +58,8 @@ Use these canonical task IDs:
 - `edge_map`
 - `line_art_clean`
 - `depth_map`
+- `albedo_layer`
+- `shading_layer`
 - `surface_normals`
 - `saliency_map`
 - `binary_mask_foreground`
@@ -122,7 +124,7 @@ Append one extension by task:
 - `exposure_correction`: "Balance highlights/shadows, recover details, avoid clipping."
 - `lens_distortion_correction`: "Correct geometric distortion while preserving straight lines and proportions."
 - `vignette_removal`: "Remove corner darkening smoothly, keep natural light falloff."
-- `reflection_removal`: "Suppress glass reflections and reveal underlying scene content."
+- `reflection_removal`: "Suppress glass reflections and reveal underlying scene content. Blurry or ghost layers are  reflection layer and need to be removed. The sharp and clear part are underlying part."
 - `shadow_removal`: "Reduce cast shadows while keeping object boundaries and albedo realistic."
 - `moire_removal`: "Suppress moire/interference patterns while retaining texture fidelity."
 - `grayscale_to_color`: "Colorize grayscale image with plausible, coherent, natural colors."
@@ -133,6 +135,8 @@ Append one extension by task:
 - `edge_map`: "Output a clean high-contrast edge image, white edges on black background."
 - `line_art_clean`: "Output simplified clean line drawing preserving major contours."
 - `depth_map`: "Output relative depth map as grayscale: near bright, far dark, smooth but edge-aware."
+- `albedo_layer`: "Output intrinsic albedo (reflectance) layer. Remove illumination effects and cast shadows as much as possible while preserving material colors."
+- `shading_layer`: "Output intrinsic shading/illumination layer. Preserve light and shadow structure while suppressing reflectance/color patterns."
 - `surface_normals`: "Output surface normal map in standard RGB normal encoding."
 - `saliency_map`: "Output saliency heatmap-style image emphasizing visually important regions."
 - `binary_mask_foreground`: "Output binary mask: foreground white, background black, clean boundaries."
